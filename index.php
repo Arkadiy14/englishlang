@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['tense'])) {
 	$name = $_POST['tense'];
-	$link = pg_connect("dbname=lang user=postgres password=140206ark");
+	$link = pg_connect("port=5432 dbname=lang user=postgres password=140206ark");
 	$query = pg_query($link, "SELECT explain FROM tenses WHERE tense = '{$name}'");
 	$result = pg_fetch_result($query, 0, 0);
 }
@@ -12,6 +12,8 @@ if(isset($_POST['tense'])) {
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>English</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="whole">
@@ -50,6 +52,7 @@ if(isset($_POST['tense'])) {
 	body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 	}
 
     .whole {
@@ -95,10 +98,11 @@ if(isset($_POST['tense'])) {
     }
 
     .result {
-    width: 400px;
+    width: 500px;
     float: left;
-    margin-top: 280px;
-    margin-left: 55px;
+    margin-top: 279px;
+    margin-left: 57px;
+    font-size: 18px;
     }
 
     .container {
@@ -109,6 +113,7 @@ if(isset($_POST['tense'])) {
     .arrow {
     float: left;
     margin-top: 274px;
+    margin-left: -34px;
     }
 </style>
 </body>
