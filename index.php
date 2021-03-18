@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['tense'])) {
 	$name = $_POST['tense'];
-	$link = pg_connect("dbname=lang user=postgres password=140206ark");
+	$link = pg_connect("dbname=lang user=postgres password=password");
 	$query = pg_query($link, "SELECT explain FROM tenses WHERE tense = '{$name}'");
 	$result = pg_fetch_result($query, 0, 0);
 }
