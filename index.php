@@ -18,7 +18,7 @@ if(isset($_POST['tense'])) {
 <body>
 <div class="whole">
 <div class="box">
-<form name="lang" method="post" action="<?=$_SERVER['SCRIPT_NAME'];?>">
+<form name="lang" method="post">
 <div class="container">
 <div class="parent">
 <div class="btn-group">
