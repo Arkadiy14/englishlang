@@ -17,7 +17,6 @@ if(isset($_POST['tense'])) {
 </head>
 <body>
 <div class="whole">
-<div class="box">
 <form name="lang" method="post">
 <div class="container">
 <div class="parent">
@@ -46,7 +45,6 @@ if(isset($_POST['tense'])) {
 </form>
 <div class="arrow"><i class="right"></i></div>
 <div class="result"><?=$result;?></div>
-</div>
 </div>
 <style type="text/css">
 	body {
