@@ -47,17 +47,17 @@ if(isset($_POST['tense'])) {
 <div class="result"><?=$result;?></div>
 </div>
 <style type="text/css">
-	body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
-	}
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
 
     .whole {
     overflow:hidden;
     }
 
-	.btn-group button {
+    .btn-group button {
     background-color: #4CAF50;
     border: 1px solid green;
     color: white;
